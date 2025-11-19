@@ -34,6 +34,8 @@
             this.create = new System.Windows.Forms.Button();
             this.train = new System.Windows.Forms.Button();
             this.test = new System.Windows.Forms.Button();
+            this.input3 = new System.Windows.Forms.TextBox();
+            this.input4 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // input1
@@ -47,7 +49,7 @@
             // input2
             // 
             this.input2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.input2.Location = new System.Drawing.Point(110, 153);
+            this.input2.Location = new System.Drawing.Point(110, 145);
             this.input2.Name = "input2";
             this.input2.Size = new System.Drawing.Size(368, 38);
             this.input2.TabIndex = 1;
@@ -55,14 +57,15 @@
             // output
             // 
             this.output.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.output.Location = new System.Drawing.Point(524, 113);
+            this.output.Location = new System.Drawing.Point(527, 179);
             this.output.Name = "output";
+            this.output.ReadOnly = true;
             this.output.Size = new System.Drawing.Size(368, 38);
             this.output.TabIndex = 2;
             // 
             // create
             // 
-            this.create.Location = new System.Drawing.Point(110, 239);
+            this.create.Location = new System.Drawing.Point(110, 360);
             this.create.Name = "create";
             this.create.Size = new System.Drawing.Size(160, 70);
             this.create.TabIndex = 3;
@@ -72,7 +75,7 @@
             // 
             // train
             // 
-            this.train.Location = new System.Drawing.Point(318, 239);
+            this.train.Location = new System.Drawing.Point(318, 360);
             this.train.Name = "train";
             this.train.Size = new System.Drawing.Size(160, 70);
             this.train.TabIndex = 4;
@@ -82,7 +85,7 @@
             // 
             // test
             // 
-            this.test.Location = new System.Drawing.Point(622, 239);
+            this.test.Location = new System.Drawing.Point(633, 252);
             this.test.Name = "test";
             this.test.Size = new System.Drawing.Size(160, 70);
             this.test.TabIndex = 5;
@@ -90,11 +93,29 @@
             this.test.UseVisualStyleBackColor = true;
             this.test.Click += new System.EventHandler(this.test_Click);
             // 
+            // input3
+            // 
+            this.input3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.input3.Location = new System.Drawing.Point(110, 215);
+            this.input3.Name = "input3";
+            this.input3.Size = new System.Drawing.Size(368, 38);
+            this.input3.TabIndex = 6;
+            // 
+            // input4
+            // 
+            this.input4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.input4.Location = new System.Drawing.Point(110, 284);
+            this.input4.Name = "input4";
+            this.input4.Size = new System.Drawing.Size(368, 38);
+            this.input4.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 383);
+            this.ClientSize = new System.Drawing.Size(1011, 479);
+            this.Controls.Add(this.input4);
+            this.Controls.Add(this.input3);
             this.Controls.Add(this.test);
             this.Controls.Add(this.train);
             this.Controls.Add(this.create);
@@ -102,7 +123,7 @@
             this.Controls.Add(this.input2);
             this.Controls.Add(this.input1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "BPNN";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,6 +137,8 @@
         private System.Windows.Forms.Button create;
         private System.Windows.Forms.Button train;
         private System.Windows.Forms.Button test;
+        private System.Windows.Forms.TextBox input3;
+        private System.Windows.Forms.TextBox input4;
     }
 }
 
